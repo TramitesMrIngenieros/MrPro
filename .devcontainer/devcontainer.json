@@ -1,0 +1,23 @@
+{
+    "name": "MRPro+ APK Builder",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "11"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.flake8"
+            ]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+    "remoteUser": "vscode",
+    "updateContentCommand": "pip3 install --user -r requirements.txt",
+    "onCreateCommand": {
+        "setup-env": "chmod +x .devcontainer/setup.sh"
+    }
+} 

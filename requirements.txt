@@ -1,0 +1,8 @@
+kivy[base]==2.2.1
+kivymd==1.1.1
+requests==2.31.0
+bcrypt==4.0.1
+PyJWT==2.8.0
+python-dateutil==2.8.2
+pillow==10.0.1
+certifi==2023.7.22 
